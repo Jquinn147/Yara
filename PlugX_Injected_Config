@@ -1,0 +1,12 @@
+rule PlugX_Injected_Config {
+	
+	strings:
+		$s1 = "gZwJElkSUikCYK" wide
+		$s2 = "login.vietnamairlines.cf" wide
+		$s3 = "yWOCCmOKa" wide
+		$s4 = "emproxy" wide
+	
+	condition:
+		2 of ($s1, $s2, $s3, $s4)
+		
+}
