@@ -1,0 +1,13 @@
+rule ZombieBoyTools_Stage1 : Stage1
+{
+	meta:
+		description: "Stage1 of ZombieBoyTools Exploit Kit, SMB"
+		in_the_wild: true
+	strings:
+		$a = "C:\Users\ZombieBoy\Documents\"
+		$b = "http://"
+		$c = "https://"
+		$d = "RookIE/1.0"
+	condition:
+		$a and ($b or $c) and $d
+}
