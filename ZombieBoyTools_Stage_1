@@ -6,8 +6,7 @@ rule ZombieBoyTools_Stage1 : Stage1
 	strings:
 		$a = "C:\Users\ZombieBoy\Documents\"
 		$b = "http://"
-		$c = "https://"
-		$d = "RookIE/1.0"
+		$c= "RookIE/1.0"
 	condition:
-		$a and ($b or $c) and $d
+            ($c or $b) and $a
 }
