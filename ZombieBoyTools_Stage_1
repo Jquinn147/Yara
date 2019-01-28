@@ -4,7 +4,7 @@ rule ZombieBoyTools_Stage1 : Stage1
 		description: "Stage1 of ZombieBoyTools Exploit Tool, SMB"
 		in_the_wild: true
 	strings:
-		$a = "C:\Users\ZombieBoy\Documents\*"
+		$a = "C:\Users\ZombieBoy\Documents\"
 		$b = "http://"
 		$c= "RookIE/1.0"
 	condition:
