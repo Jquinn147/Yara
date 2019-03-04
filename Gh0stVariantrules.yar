@@ -8,7 +8,7 @@ rule gh0strat_variant_dropper
 	    $s1 = "+gPp6bGvrqa9/fz2770A/amupqawrp8="
 	    $s2 = "Shellex"
 	    $s3 = "SUSRAIZCqllahrCohrlojSarZSalpecasZ"
-	    $s4 = "[printto("%1","%2","%3","%4")]"
+	    $s4 = '[printto("%1","%2","%3","%4")]'
 	    $s5 = "{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}"
 	    $s6 = "SYST%-\#urrENt#ONtrOLSEt\SErvICEs\"
 	
