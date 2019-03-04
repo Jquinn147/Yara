@@ -1,7 +1,7 @@
 rule gh0strat_variant_dropper
 {
 	meta:
-	    author = "James Quinn, @lazyactivist192
+	    author = "James Quinn, @lazyactivist192"
 	    desc = "Identifies a Gh0stRAT dropper"
 
 	strings:
@@ -19,7 +19,7 @@ rule gh0strat_variant_dropper
 rule gh0strat_variant
 {
  	meta:
-	    author = "James Quinn, @lazyactivist192
+	    author = "James Quinn, @lazyactivist192"
 	    desc = "Identifies a Gh0stRAT variant"
 	
 	strings:
