@@ -8,13 +8,12 @@ rule gh0strat_variant_dropper
 	    $s1 = "+gPp6bGvrqa9/fz2770A/amupqawrp8="
 	    $s2 = "Shellex"
 	    $s3 = "SUSRAIZCqllahrCohrlojSarZSalpecasZ"
-	    $s4 = '[printto("%1","%2","%3","%4")]'
-	    $s5 = "{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}"
-	    $s6 = "SYST%-\#urrENt#ONtrOLSEt\SErvICEs\"
+	    $s4 = "[printto(\"%1\",\"%2\",\"%3\",\"%4\")]"
+
+	    $s6 = "SYST%-\\#urrENt#ONtrOLSEt\\SErvICEs\\"
 	
 	condition:
-	    2 of ($s1, $s2, $s5, $s4) and 1 of ($s3, $s6)
-
+	    2 of ($s1, $s2, $s4) and 1 of ($s3, $s6)
 }
 rule gh0strat_variant
 {
@@ -23,7 +22,7 @@ rule gh0strat_variant
 	    desc = "Identifies a Gh0stRAT variant"
 	
 	strings:
-	    $s1 = "\\.\agmkis2"
+	    $s1 = "\\\\.\\agmkis2"
 	    $s2 = "Shellex"
 	    $s3 = "Gh0st Update"
 	    $s4 = "PluginMe"
